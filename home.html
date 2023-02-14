@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/24e3780081.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   <div id="header">
+    
+    <div class="container">
+       
+       <nav>
+        <img src="../images/logo3.jpeg"class="logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#">portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+       </nav>
+       <div class="header-text">
+       
+           <h1>Hi,<br>I'm <span>Abeera M</span> </h1>
+           <p>Python Full Stack Developer</p>
+           <p style="font-size:medium;">experience in web design and development,producing quality work.</p>
+       </div>
+    </div>
+   </div>
+   <!-- -------------------------About------------------------------------------>
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+              <img src="C:\Users\WORK\Desktop\portfolio\images\new1.jpg" >
+            </div>
+            <div class="about-col-2">
+            <h3 class="sub-title">About Me</h3>
+            <p>Hi there, I'm Abeera M,Python full stack developer intern with a passion for creating web applications and data-driven solutions. I completed my B-tech in Computer Science, and I have experience in Python programming, web development, and database design.During my internship, I have worked on several projects that have enhanced my skills and experience in full stack development.</p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Web development</span><br>Web app Development </li>
+                    <li><span>Backend Developer</span><br>Python-Django</li>
+                    <li><span>Software Testing</span><br>Manual and Automation Testing </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2022-current</span><br>Python Full Stack Internship at Maxlore Innovations,ULcyberpark</li>
+                    <li><span>2016-2017</span><br>Software Testing Training at Rogersoft,Kochi</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>2012-2016</span><br>B-tech CSE from AWH Engineering College</li>
+                   
+                </ul>
+            </div>
+        </div>  
+        </div>
+    </div>
+   </div>
+   <!-- ----------------------Services------------------------------- -->
+   <div id="services">
+    <div class="container">
+        <h3 class="sub-title">My Services</h3>
+         <div class="services-list">
+         <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Custom Website Design: I specialize in creating custom website designs that reflect your brand and unique personality. Whether you need a new website or a redesign of an existing site, I will work with you to create a website that meets your goals and exceeds your expectations.</p>
+            <a href="#">Learn more</a>
+         </div>
+         <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Devlopment</h2>
+            <p>Custom Web Development: I specialize in developing custom web applications from scratch using various programming languages such as HTML, CSS, JavaScript, and Python</p>
+            <a href="#">Learn more</a>
+         </div>
+         <div> 
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>Software Testing</h2>
+            <p>As a software testing professional, I offer a range of testing services to ensure that your software runs efficiently and effectively.</p>
+            <a href="#">Learn more</a>
+         </div>
+    </div>
+   </div>
+   </div>
+   <!-- ------------------------portfolio------------------------- -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://themewagon.com/wp-content/uploads/2018/10/alazea-1.jpg">
+                <div class="layer">
+                    <h3>Plant Nursery site</h3>
+                    <p>The website connects the users to purchase plants of different categories</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://resize.indiatvnews.com/en/resize/newbucket/730_-/2022/03/online-shopping-freepik-1646920907.jpg">
+                <div class="layer">
+                    <h3>Online Shopping site</h3>
+                    <p>The website connects the users to purchase products and send feedbacks.</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="http://softwaretestingedu.com//wp-content/uploads/2021/04/software-testing-levels-1.jpg">
+                <div class="layer">
+                    <h3>Testing</h3>
+                    <p>Tested a company website using automation tool selenium</p>
+                    <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+<!-- ---------------------------contact------------------------- -->
+<div id="contact">
+    <div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>abeeraazees@gmail.com</p>
+            <p><i class="fa-solid fa-square-phone"></i>+91 9400576876</p>
+            <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="C:\Users\WORK\Desktop\portfolio\images\Abeera.7z" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2" >Submit</button>
+
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright<i class="fa-regular fa-copyright"></i> 2023 Abeera. |All rights reserved</p>
+    </div>
+</div>
+<!-- -----------------js---------------------- -->
+   <script>
+    
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+       for (tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab");
+}
+   
+</script>
+
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+     function openmenu(){
+        sidemenu.style.right='0';
+
+     }
+     function closemenu(){
+        sidemenu.style.right='-200';
+     }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw5f9d8uWp4wYflemA1M_1GWgpoMstqt9OV5iHkMoK-5Z13jBD3Lms6r4u5M0iNqlxW0A/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
